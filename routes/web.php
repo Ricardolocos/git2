@@ -98,3 +98,7 @@ Route::get('/usuario/{nombre?}', function ($nombre = "Invitado") {
 
 /*Esta es una ruta al controlador Producto */
 Route::get('/productos', [ProductoController::class, 'index']);
+
+Route::get('/usuarios', function(){
+    return "Hola mundo";
+});
